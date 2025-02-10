@@ -1,4 +1,8 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 button{
@@ -6,4 +10,19 @@ button{
     color: white;
     padding: 10px;
     border: none;
+    margin-top: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+body{
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.conteudo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
