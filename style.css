@@ -1,37 +1,42 @@
 * {
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;  
 }
 
 body {
     padding-top: 20px;
-    padding-right: 100px;
+    /* Espaçamento interno */
     padding-left: 100px;
+    padding-right: 100px;
 }
 
-.conteudo {
-    width: 100%; /* LARGURA */
+.caixa-conteudo {
+    width: 100%;
+    /* largura */
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
-.textos {
+.caixa-textos {
     width: 600px;
 }
 
 h2 {
-    color: #333; /* Cor do texto */
-    font-size: 60px; /* Tamanho do texto */
-    font-weight: 600; /* Grossura do texto*/
+    color: #333333;
+    /* Define a cor do texto */
+    font-size: 60px;
+    /* Tamanho do texto */
+    font-weight: 600;
+    /* Grossura do texto */
 }
 
-span {
+.texto-starbuck {
     color: #017143;
-    font-size: 70px;
     font-weight: 900;
+    font-size: 70px;
 }
 
 p {
@@ -39,35 +44,55 @@ p {
 }
 
 button {
-    background: #017143;/* background -> fundo do elemento */
-    color: white;/* cor do texto */
-    border-radius: 40px;/* arredondamento da borda */
-    border: none;/* borda do elemento */
-    cursor: pointer;/* cursor do mouse */
-    padding: 10px; /* espaçamento interno */
-    margin-top: 20px;/* Cria uma margem  */
-    transition: 0.5s;
+    background-color: #017143;
+    /* Cor de fundo */
+    color: #ffffff;
+    /* Cor do texto do botão */
+    border-radius: 40px;
+    /* arredondamento das bordas  */
+    padding: 10px;
+    border: none;
+    /* Tira a borda do botão */
+    cursor: pointer;
+    /* Deixa a mãozinha */
+    margin-top: 30px;
 }
 
-button:hover{
-    background-color: #018950;
+button:hover {
+    background-color: #008a51;
 }
 
-.imagem {
-    width: 600px;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 200px;
+.logo {
+    width: 80px;
 }
 
-.menu {
+.caixa-menu {
     display: flex;
     justify-content: center;
 }
 
 .botao-menu {
-    width: 60px;
+    width: 80px;
     cursor: pointer;
+    margin: 10px;
+    transition: 1s;
+    
+}
+
+.botao-menu:hover {
+    transform: translateY(-25px);
+}
+
+.caixa-imagem {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 200px;
+    
+}
+
+.copo {
+    width: 340px;
 }
 
 .circulo {
@@ -79,12 +104,4 @@ button:hover{
     left: 0;
     clip-path: circle(600px at right 800px);
     z-index: -1;
-}
-
-.logo {
-    width: 80px;
-}
-
-.imagem-copo {
-    width: 340px;
 }
