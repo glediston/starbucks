@@ -4,4 +4,6 @@
 button{
     background-color: #017143;
     color: white;
+    padding: 10px;
+    border: none;
 }
